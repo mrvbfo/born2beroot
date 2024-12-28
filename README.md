@@ -15,25 +15,25 @@
 4. sudo systemctl status ssh / sudo service status ssh -- ssh durumu kontrol
 
 ## Kullanıcı
-1.id <username> --> kullanı bilgilerini gösterir
-2.cat /etc/passwd | grep home --->  Linux sistemindeki kullanıcı hesap bilgilerini içeren bir dosyayı (/etc/passwd) görüntüler ve Görüntülenen satırlar arasından "home" kelimesini içerenleri seçer.
+1. id <username> --> kullanı bilgilerini gösterir 
+2. cat /etc/passwd | grep home --->  Linux sistemindeki kullanıcı hesap bilgilerini içeren bir dosyayı (/etc/passwd) görüntüler ve Görüntülenen satırlar arasından "home" kelimesini içerenleri seçer.
 3. sudo groups
-4.getent group sudo
+4. getent group sudo
 5. getent group user42
 6. sudo adduser  <new_username> → kullanıcı oluşturulur ve şifre seçilir
 7. sudo vim /etc/login.defs (burada max days 30, min days 2, warn 7 olarak ayalanır)
 8. sudo vim /etc/pam.d/common-password -> katı şifreleme politikalarını belirleyen dosya 
-9.sudo groupadd evaluating
+9. sudo groupadd evaluating
 10. cat /etc/group | grep evaluating (kurulan grubu gör)
 11. sudo usermod -aG evaluating <username>
 12. groups <username>
 
 ## HOST
-1.sudo hostnamectl
-2.sudo hostnamectl set-hostname <new_hostname>
-3.sudo nano /etc/hosts
-4.sudo reboot
-5.sudo hostnamectl
+1. sudo hostnamectl
+2. sudo hostnamectl set-hostname <new_hostname>
+3. sudo nano /etc/hosts
+4. sudo reboot
+5. sudo hostnamectl
 6. lsblk
 
 ## SUDO
