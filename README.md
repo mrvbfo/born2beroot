@@ -42,7 +42,7 @@ cat /etc/group
 ## SUDO
 1. sudo --version
 2. usermod -aG sudo <username>
-3. groups <username>
+3. groups username
 4. sudo visudo
 5. sudo vim /etc/sudoers
 6. cd /var/log/sudo
