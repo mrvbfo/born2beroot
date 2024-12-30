@@ -13,15 +13,12 @@ sudo crontab -u root -e
 sudo systemctl status apparmor
 
 ## Basit Yapılandırma
-1. chage -l <username>  -- Şifre politikalarının kullanıcıya göre listeler (min day 2, Max day 30, warn massage 7)
-2. sudo systemctl status ufw / sudo ufw status -- listeyi gösterir
-3. sudo ufw status numbered --- listeyi sıralayarak gösterir
-4. sudo systemctl status ssh / sudo service status ssh -- ssh durumu kontrol
+2. sudo systemctl status ufw 
+4. sudo systemctl status ssh 
 
 ## Kullanıcı
 1. id <username> --> kullanı bilgilerini gösterir 
 2. cat /etc/passwd | grep home --->  Linux sistemindeki kullanıcı hesap bilgilerini içeren bir dosyayı (/etc/passwd) görüntüler ve Görüntülenen satırlar arasından "home" kelimesini içerenleri seçer.
-3. sudo groups
 4. getent group sudo
 5. getent group user42
 6. sudo adduser  <new_username> → kullanıcı oluşturulur ve şifre seçilir
@@ -31,6 +28,8 @@ sudo systemctl status apparmor
 10. cat /etc/group | grep evaluating (kurulan grubu gör)
 11. sudo usermod -aG evaluating <username>
 12. groups <username>
+
+cat /etc/group
 
 ## HOST
 1. sudo hostnamectl
