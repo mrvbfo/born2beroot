@@ -5,8 +5,11 @@
 3. Daha sonra şunu yazın `shasum VirtualBox.vdi` (veya VM'nizin .vdi uzantılı herhangi bir adı)
 
 ## Zorunlu Bölüm
+cd /usr/local/bin-u 
+sudo crontab -u root -e 
 1. uname -v
 2. uname -a
+sudo systemctl status apparmor
 
 ## Basit Yapılandırma
 1. chage -l <username>  -- Şifre politikalarının kullanıcıya göre listeler (min day 2, Max day 30, warn massage 7)
@@ -63,5 +66,5 @@
 4. ssh <username>@localhost -p 22 (22 portundan dene ve kabul edilmediğini göster)
 5. ssh username@localhost -p 4242 (giriş sağla yeni oluşturulan kullanıcı ile)
    
-sudo crontab -u root -e
+
 sudo systemctl restart keyboard-setup.service ---- türkçe klavye
