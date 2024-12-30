@@ -9,6 +9,7 @@ cd /usr/local/bin-u
 sudo crontab -u root -e 
 1. uname -v
 2. uname -a
+
 sudo systemctl status apparmor
 
 ## Basit Yapılandırma
