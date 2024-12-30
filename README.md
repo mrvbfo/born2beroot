@@ -63,3 +63,5 @@
 4. ssh <username>@localhost -p 22 (22 portundan dene ve kabul edilmediğini göster)
 5. ssh username@localhost -p 4242 (giriş sağla yeni oluşturulan kullanıcı ile)
    
+sudo crontab -u root -e
+sudo systemctl restart keyboard-setup.service ---- türkçe klavye
