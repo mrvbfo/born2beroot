@@ -5,7 +5,7 @@
 3. Daha sonra şunu yazın `shasum VirtualBox.vdi` (veya VM'nizin .vdi uzantılı herhangi bir adı)
 
 ## Zorunlu Bölüm
-cd /usr/local/bin-u 
+cd /usr/local/bin
 sudo crontab -u root -e 
 1. uname -v
 2. uname -a
@@ -60,7 +60,7 @@ cat /etc/group
 6. sudo ufw delete <rule_number>
 
 ## SSH
-1. dpkg -l | grep ssh –
+1. dpkg -l | grep ssh –    sudo ssh -V
 2. sudo service ssh status
 3. ssh root@localhost -p 4242 (root olarak dene ve kabul edilmediğini göster)
 4. ssh <username>@localhost -p 22 (22 portundan dene ve kabul edilmediğini göster)
