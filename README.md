@@ -18,22 +18,21 @@ sudo systemctl status apparmor
 
 ## Kullanıcı
 1. id <username> --> kullanı bilgilerini gösterir 
-2. cat /etc/passwd | grep home --->  Linux sistemindeki kullanıcı hesap bilgilerini içeren bir dosyayı (/etc/passwd) görüntüler ve Görüntülenen satırlar arasından "home" kelimesini içerenleri seçer.
-4. getent group sudo
-5. getent group user42
-6. sudo adduser  <new_username> → kullanıcı oluşturulur ve şifre seçilir
-7. sudo vim /etc/login.defs (burada max days 30, min days 2, warn 7 olarak ayalanır)
-8. sudo vim /etc/pam.d/common-password -> katı şifreleme politikalarını belirleyen dosya 
-9. sudo groupadd evaluating
-10. cat /etc/group | grep evaluating (kurulan grubu gör)
-11. sudo usermod -aG evaluating <username>
-12. groups <username>
+2. getent group sudo
+3. getent group user42
+4. sudo adduser new_username → kullanıcı oluşturulur ve şifre seçilir
+5. sudo vim /etc/login.defs (burada max days 30, min days 2, warn 7 olarak ayalanır)
+6. sudo vim /etc/pam.d/common-password -> katı şifreleme politikalarını belirleyen dosya 
+7. sudo groupadd evaluating
+8. cat /etc/group | grep evaluating (kurulan grubu gör)
+9. sudo usermod -aG evaluating username
+10. groups username
 
 cat /etc/group
 
 ## HOST
 1. sudo hostnamectl
-2. sudo hostnamectl set-hostname <new_hostname>
+2. sudo hostnamectl set-hostname new_hostname
 3. sudo nano /etc/hosts
 4. sudo reboot
 5. sudo hostnamectl
@@ -41,7 +40,7 @@ cat /etc/group
 
 ## SUDO
 1. sudo --version
-2. usermod -aG sudo <username>
+2. usermod -aG sudo username
 3. groups username
 4. sudo visudo
 5. sudo vim /etc/sudoers
@@ -57,7 +56,7 @@ cat /etc/group
 3. sudo ufw status numbered
 4. sudo ufw allow 8080
 5. sudo ufw status numbered
-6. sudo ufw delete <rule_number>
+6. sudo ufw delete rule_number
 
 ## SSH
 1. dpkg -l | grep ssh –    sudo ssh -V
@@ -67,4 +66,4 @@ cat /etc/group
 5. ssh username@localhost -p 4242 (giriş sağla yeni oluşturulan kullanıcı ile)
    
 
-sudo systemctl restart keyboard-setup.service ---- türkçe klavye
+sudo systemctl restart keyboard-setup.service ---- geçici türkçe klavye
